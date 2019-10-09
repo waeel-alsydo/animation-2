@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+section{
+    height: 100vh;
+    background-color: #000000; 
+    display: flex;  
+    justify-content: center;
+}
+div{
+    width: 10vw;
+    height: 15vh;
+    position: relative;
+    margin: 10px;
+    animation: mymove .6s infinite;
+}
+div:nth-child(1){
+    background-color: green;
+    animation-delay: 1s;
+}
+div:nth-child(2){
+    background-color: red;
+    animation-delay: 2s
+}
+div:nth-child(3){
+    background-color: blue;
+    animation-delay: 3s
+}
+div:nth-child(4){
+    background-color: grey;
+    animation-delay: 4s
+
+}
+div:nth-child(5){
+    background-color: sienna;
+    animation-delay: 5s
+}
+@keyframes mymove{
+    0%{top: 50%;}
+    50%{top:40%;}
+    100%{top:50%;}
+}
